@@ -247,7 +247,7 @@ ul a {
   }
 
   .img {
-    background-image: url(../images/Circle\ design.svg);
+    background-image: url("../images/Circle-design.svg");
     width: 80%;
     background-size: contain;
   }
