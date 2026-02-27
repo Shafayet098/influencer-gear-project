@@ -153,9 +153,11 @@ ul a {
   font-weight: 600;
   color: #555;
 }
-.see-more{
+
+.see-more {
   text-align: end;
 }
+
 .see-more a {
   color: #E02C6D;
   text-decoration: none;
@@ -166,11 +168,13 @@ ul a {
   gap: 100px;
   margin: 100px 150px;
 }
-.featured h2{
+
+.featured h2 {
   color: #0A0826;
   font-size: 2rem;
 }
-.featured p{
+
+.featured p {
   font-weight: 400;
   opacity: 0.8;
   margin-bottom: 30px;
@@ -210,6 +214,109 @@ ul a {
 
 }
 
-.display-none {
+.hide {
   display: none;
+}
+
+/* Media COntent */
+@media screen and (max-width: 576px) {
+  .manu {
+    display: block;
+  }
+
+  header {
+    margin: 10px;
+  }
+
+  .influencer {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+  .banner-description {
+    margin-left: 30px;
+    max-width: 90%;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .img {
+    background-image: url("./../images/Circle\ design.svg");
+    width: 80%;
+    background-size: contain;
+  }
+
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-items: center;
+    margin: 100px 10px;
+    align-items: center;
+  }
+
+  /* First row (4 logos spaced evenly) */
+  .logos img:nth-child(1) {
+    grid-column: 1 / span 2;
+  }
+  .logos img:nth-child(2) {
+    grid-column: 3 / span 2;
+  }
+
+  .logos img:nth-child(3) {
+    grid-column: 5 / span 2;
+  }
+
+  .logos img:nth-child(4) {
+    grid-column: 7 / span 2;
+  }
+
+  /* Second row centered perfectly */
+  .logos img:nth-child(5) {
+    grid-column: 2 / span 2;
+  }
+
+  .logos img:nth-child(6) {
+    grid-column: 4 / span 2;
+  }
+
+  .logos img:nth-child(7) {
+    grid-column: 6 / span 2;
+  }
+
+  .logos img {
+    width: 70%;
+  }
+
+  .card-parent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+  .card-section {
+    margin: 0px 30px;
+  }
+
+  .featured-box {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 100px 30px;
+  
+  }
+  .featured {
+    width: 95%;
+  }
+  .featured-img{
+    width: 50 vmax;
+  }
+  .featured-img img{
+    width: 100%;
+  }
+
 }
