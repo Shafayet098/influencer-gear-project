@@ -69,7 +69,10 @@ ul a {
 }
 
 .img {
-  background-image: url(/images/Circle\ design.svg);
+  background-image: url("../images/Circle-design.svg");
+  width: 80%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .logos {
@@ -264,6 +267,7 @@ ul a {
   .logos img:nth-child(1) {
     grid-column: 1 / span 2;
   }
+
   .logos img:nth-child(2) {
     grid-column: 3 / span 2;
   }
@@ -299,6 +303,7 @@ ul a {
     gap: 30px;
     justify-items: center;
   }
+
   .card-section {
     margin: 0px 30px;
   }
@@ -307,15 +312,18 @@ ul a {
     display: flex;
     flex-direction: column-reverse;
     margin: 100px 30px;
-  
+
   }
+
   .featured {
     width: 95%;
   }
-  .featured-img{
+
+  .featured-img {
     width: 50 vmax;
   }
-  .featured-img img{
+
+  .featured-img img {
     width: 100%;
   }
 
